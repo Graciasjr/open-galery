@@ -72,14 +72,18 @@ export default function PhotoCard({ photo, onClick,onAddReaction }: PhotoCardPro
             <motion.button whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }}
              className="flex items-center space-x-1 text-gray-500 hover:text-red-500 transition-colors">
               <Heart size={18} className="transition-transform hover:scale-110" />
-              <span className="text-sm">{10}</span>
+              <span className="text-sm">{0}</span>
             </motion.button>
             {/* <motion.button whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }} className="flex items-center space-x-1 text-gray-500 hover:text-blue-500 transition-colors">
               <MessageCircle size={18} className="transition-transform hover:scale-110" />
               <span className="text-sm">0</span>
             </motion.button> */}
             <div className="relative">
-              <motion.button onClick={() => setShowReactions(!showReactions)} whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }} className="flex space-x-1 items-center text-gray-500 hover:text-yellow-500 transition-colors">
+              <motion.button onClick={
+                ()=>{console.log('')}
+                // () => setShowReactions(!showReactions)} whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }
+              }
+                 className="flex space-x-1 items-center text-gray-500 hover:text-yellow-500 transition-colors">
                   <Smile size={18} />
                   <span className="text-sm">0</span>
               </motion.button>

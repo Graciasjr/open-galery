@@ -27,14 +27,14 @@ export default function LandingPage({ onGetStarted }: { onGetStarted: () => void
               Une nouvelle façon de partager vos moments précieux avec le monde.
               Créez des albums, ajoutez des filtres et interagissez avec une communauté passionnée.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
+              // whileHover={{ scale: 1.05 }}
+              // whileTap={{ scale: 0.95 }}
               onClick={onGetStarted}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow"
+              className="hover:bg-gradient-to-t  bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition-all"
             >
               Commencer maintenant
-            </motion.button>
+            </button>
           </motion.div>
         </div>
       </header>
