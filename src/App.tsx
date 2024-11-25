@@ -91,14 +91,6 @@ function App() {
               ) : ''
             }
             <main className="max-w-7xl mx-auto">
-              <PhotoCard onAddReaction={
-                (reaction) => {
-                  console.log('Reaction added:', reaction);
-                }
-              } photo={photo[0]}
-                onClick={() => { console.log('Photo clicked:', photo[0]); }
-                }
-              />
               {currentAlbumId ? (
                 <PhotoGrid photos={photo} onPhotoClick={(photo) => { console.log('Photo clicked:', photo); }} isLoading={isLoading} />
               ) : (
