@@ -13,7 +13,10 @@ export default function LandingPage({ onGetStarted }: { onGetStarted: () => void
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-          >
+            >
+            <h1 className='text-6xl font-bold mb-3 text-transparent '>
+              <span className='bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600'>OoOrh</span>
+            </h1>
             <h1 className="text-6xl font-bold text-gray-900 mb-6">
               Capturez. Partagez.{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
