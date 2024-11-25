@@ -1,3 +1,4 @@
+import { Flame, Heart, Smile, ThumbsUpIcon } from 'lucide-react';
 export interface Photo {
   id: string;
   fileId:string;
