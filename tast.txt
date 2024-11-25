@@ -1,0 +1,12 @@
+#v.O.O.1
+
+- écrire le handler de requête(fait 70%)
+- fait les services openGallery(fait 30%)
+- installer sdk pocketbase
+- 
+- améliorer l'affichage des images
+    *rectifier  l'affichage disproportionné
+    *enlever les bouttons "new album", "new photo"
+    * afficher à la place le nom de l'utilisateur
+    
+- use crisp
