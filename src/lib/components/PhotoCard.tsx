@@ -68,6 +68,11 @@ export default function PhotoCard({ photo, onClick,onAddReaction }: PhotoCardPro
       
       <div className="p-4">
         <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-2">
+            <motion.button onClick={async()=>{await handleDownload(isDownloading,setIsDownloading,url,photo.name)}} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="text-gray-500 hover:text-green-500 transition-colors disabled:opacity-50" disabled={isDownloading}>
+              <Download size={18} />
+            </motion.button>
+          </div>
           <div className="flex items-center space-x-4">
             <motion.button whileHover={{scale:1.1}} whileTap={{ scale: 0.9 }}
              className="flex items-center space-x-1 text-gray-500 hover:text-red-500 transition-colors">
@@ -95,11 +100,7 @@ export default function PhotoCard({ photo, onClick,onAddReaction }: PhotoCardPro
 
             </div>
           </div>
-          <div className="flex items-center space-x-2">
-            <motion.button onClick={async()=>{await handleDownload(isDownloading,setIsDownloading,url,photo.name)}} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="text-gray-500 hover:text-green-500 transition-colors disabled:opacity-50" disabled={isDownloading}>
-              <Download size={18} />
-            </motion.button>
-          </div>
+         
         </div>
       </div>
     </motion.div>
